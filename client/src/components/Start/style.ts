@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const FirstTitle = styled.div`
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background-color: pink;
   display: flex;
   flex-direction: column;

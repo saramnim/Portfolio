@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
-export const Background = styled.div`
-  width: 100%;
-  height: 100%;
+export const AboutWrapper = styled.div`
   display: flex;
+  flex-direction: row;
+  padding: 10%;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 `;
 
-export const Content = styled.div`
-  margin: 10% 10% 0% 30%;
-  height: 100%;
-  background-color: pink;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const AboutTitle = styled.div`
+  flex-direction: row;
+  background-color: green;
   align-items: center;
-  color: white;
+  justify-content: center;
 `;
+
+export const AboutText = styled.div``;
