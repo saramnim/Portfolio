@@ -1,5 +1,4 @@
 import {
-  Background,
   ContentWrapper,
   TitleWrapper,
   Page,
@@ -12,17 +11,15 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Background>
-      <PageWrapper>
-        <TitleWrapper>My Project</TitleWrapper>
-        <Page>
-          <ContentWrapper>
-            <ContentTitle>I'm Good</ContentTitle>
-            <ContentText>gkdl</ContentText>
-          </ContentWrapper>
-        </Page>
-      </PageWrapper>
-    </Background>
+    <PageWrapper>
+      <TitleWrapper>My Project</TitleWrapper>
+      <Page>
+        <ContentWrapper>
+          <ContentTitle>I'm Good</ContentTitle>
+          <ContentText>gkdl</ContentText>
+        </ContentWrapper>
+      </Page>
+    </PageWrapper>
   );
 };
 

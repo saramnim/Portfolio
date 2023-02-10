@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-  margin: 0% 0% 0% 16%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  font-family: "Jua", sans-serif;
 `;
 
 export const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Page = styled.div`
-  margin-left: 20px;
-  width: 75.5vw;
   height: 100%;
   background-color: white;
   border-style: solid;
@@ -22,7 +22,7 @@ export const Page = styled.div`
   border-color: pink;
   display: flex;
   flex-direction: column;
-  scrollY: auto;
+  width: 82.5%;
 `;
 
 export const TitleWrapper = styled.div`
@@ -32,11 +32,12 @@ export const TitleWrapper = styled.div`
 
 export const ContentWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 5%;
-  background-color: white;
+  flex-direction: row;
+  // padding: 2%;
+  height: 10vh;
   color: black;
   border-radius: 10px;
+  // justify-content: space-around;
 `;
 
 export const ContentTitle = styled.div`
@@ -49,8 +50,9 @@ export const ContentText = styled.ul`
   word-break: keep-all;
 `;
 
-export const ContentTextTitle = styled.li`
+export const ContentTextTitle = styled.a`
   font-size: 20px;
+  font-weight: bold;
 `
 
 
@@ -61,9 +63,10 @@ export const URLs = styled.a`
 `;
 
 export const ClickButton = styled.button`
-  font-size: 20px;
+  font-size: 30px;
+  margin: 10px;
   color: pink;
-  // font-weight: bold;
+  font-weight: bold;
   border: none;
   background-color: white;
   cursor: pointer;

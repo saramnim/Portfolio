@@ -1,11 +1,10 @@
-import { Picture, NavMenu, NavWrap } from "./style";
+import { NavMenu, NavWrap } from "./style";
 import React from "react";
 import { Link } from "react-router-dom";
 import { ROUTE } from "../../Route";
 const NavBar = () => {
   return (
     <NavWrap>
-      <Picture src="/images/사진.jpg" />
       <Link to={"/"} className="sidemenu">
         Home
       </Link>
