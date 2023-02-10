@@ -1,19 +1,25 @@
-import { Picture, SideMenu, SideWrap } from "./style";
+import { Picture, NavMenu, NavWrap } from "./style";
 import React from "react";
 import { Link } from "react-router-dom";
-
-const SideBar = () => {
+import { ROUTE } from "../../Route";
+const NavBar = () => {
   return (
-    <SideWrap>
+    <NavWrap>
       <Picture src="/images/사진.jpg" />
-      <SideMenu href="/">Home</SideMenu>
-      <SideMenu href="/about">About Me</SideMenu>
-      <SideMenu>Project</SideMenu>
-      <SideMenu>this is menu</SideMenu>
-      <SideMenu>this is menu</SideMenu>
-      <SideMenu>Contact Me</SideMenu>
-    </SideWrap>
+      <Link to={"/"} className="sidemenu">
+        Home
+      </Link>
+      <Link to={"/about"} className="sidemenu">
+        About Me
+      </Link>
+      <Link to={"/project"} className="sidemenu">
+        Project
+      </Link>
+      <Link to={"/contact"} className="sidemenu">
+        Contact Me
+      </Link>
+    </NavWrap>
   );
 };
 
-export default SideBar;
+export default NavBar;

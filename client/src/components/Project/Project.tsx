@@ -1,13 +1,20 @@
-import { ProjectWrapper, ProjectTitle, ProjectContent } from "./style";
 import React from "react";
+import { Background, ContentWrapper, TitleWrapper, Page, PageWrapper, ContentText, ContentTitle } from "../common/style";
 
-const ProjectInfo = () => {
+const Project = () => {
   return (
-    <ProjectWrapper>
-      <ProjectTitle></ProjectTitle>
-      <ProjectContent></ProjectContent>
-    </ProjectWrapper>
+    <Background>
+      <PageWrapper>
+        <TitleWrapper>My Project</TitleWrapper>
+        <Page>
+          <ContentWrapper>
+            <ContentTitle>gkdlgkdl</ContentTitle>
+            <ContentText>하이</ContentText>
+          </ContentWrapper>
+        </Page>
+      </PageWrapper>
+    </Background>
   );
 };
 
-export default ProjectInfo;
+export default Project;

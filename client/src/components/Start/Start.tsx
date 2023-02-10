@@ -6,7 +6,6 @@ import {
 } from "./style";
 import axios from "axios";
 import React from "react";
-import SideBar from './../Side/Side';
 import { Background } from "../common/style";
 
 const StartPage = () => {
